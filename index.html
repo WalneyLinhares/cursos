@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="conteiner">
+        <h1>Buscador de CEP</h1>
+        <section id="busca-cep">
+            <form id="busca-cep-form">
+                <label for="cep">CEP:</label>
+                <i class="fa-solid fa-location-dot" id="icon-localidade"></i>
+                <input type="text" id="cep" size="10" maxlength="9">
+            </form>
+        </section>        
+
+        <section id="resultados-cep" style="display: none;">
+            <table class="resultado-formulario">
+                <thead>
+                    <tr id="resultado-head">
+                        <th>Logradouro/Nome</th>
+                        <th>Bairro/Distrito</th>
+                        <th>Localidade/UF</th>
+                        <th>CEP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="resultado-body">
+                        <td id="logradouro">---</td>
+                        <td id="bairro">---</td>
+                        <td id="localidade">---</td>
+                        <td id="resultado-cep">---</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="botao-buscar">
+                <button id="buscar-novamente" style="display: block;">Buscar novamente</button>
+            </div>
+        </section>    
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

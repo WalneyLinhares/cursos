@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Tektur:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #0f1018;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteiner{
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-height: 300px;
+    max-width: 550px;
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: 0 8px 10px rgb(0, 0, 0);
+}
+
+
+#busca-cep{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 550px;
+}
+
+#conteiner h1 {
+    color: #6ec1e4;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#busca-cep form{
+    display: flex;
+    flex-direction: column;
+}
+  
+#busca-cep label {
+    color: #7bc5f7;
+    font-size: 14px;
+}
+  
+#busca-cep i {
+    position: absolute;
+    top: 26px;
+    color: #7bc5f7;
+    font-size: 15px;
+}
+  
+#busca-cep input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #7bc5f7;
+    color: #7bc5f7;
+    padding: 5px 0 5px 20px;
+    width: 150px;
+    font-size: 15px;
+}
+
+@keyframes tremor {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+  
+.erro {
+    animation: tremor 0.3s ease;
+}
+  
+#resultados-cep {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 30px;
+}
+  
+.resultado-formulario {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    table-layout: fixed;
+}
+
+th, td {
+    font-size: 11px;
+    padding: 12px 16px;
+    text-align: left;
+    color: #7bc5f7;
+    background-color: transparent;
+    border: 2px solid #7bc5f7;
+}
+
+.botao-buscar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    margin: 0px 0 10px 0;
+}
+
+#buscar-novamente{
+    background-color: #7bc5f7;
+    font-size: 10px;
+    height: 35px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buscar-novamente:hover{
+    background-color: #33adff;
+}
+
+thead tr th:first-child {
+    border-top-left-radius: 8px;
+}
+thead tr th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tbody tr td:first-child {
+    border-bottom-left-radius: 8px;
+}
+tbody tr td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #7bc5f7 !important;
+    transition: background-color 9999s ease-in-out 0s !important;
+}
+  
