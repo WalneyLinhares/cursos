@@ -84,8 +84,8 @@ body{
 }
   
 #resultados-cep {
-    width: 100%;
-    max-width: 520px;
+    width: 90%;
+    /* max-width: 520px; */
     margin: 0 30px;
 }
   
@@ -148,3 +148,13 @@ input:-webkit-autofill {
     transition: background-color 9999s ease-in-out 0s !important;
 }
   
+@media (max-width: 600px) {
+    #conteiner {
+        max-width: 350px;
+        
+    }
+    th, td {
+        font-size: 7px;
+        padding: 10px 8px;
+    }
+}
