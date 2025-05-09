@@ -15,10 +15,9 @@ body{
 }
 
 #conteiner{
-    /* background-color: rgb(255, 255, 255); */
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-direction: column;
     max-height: 300px;
     max-width: 550px;
@@ -148,13 +147,13 @@ input:-webkit-autofill {
     transition: background-color 9999s ease-in-out 0s !important;
 }
   
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     #conteiner {
-        max-width: 350px;
+        max-width: 330px;
         
     }
     th, td {
-        font-size: 7px;
+        font-size: 6px;
         padding: 10px 8px;
     }
 }
